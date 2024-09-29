@@ -1,0 +1,1 @@
+lupdate DCED2.pro

@@ -1,0 +1,119 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: DCED2 - Win32 LG Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "E:\DOCUME~1\LGs0pHT\LOCALS~1\Temp\RSP5D.tmp" with contents
+[
+/nologo /ML /GX /O1 /Ob0 /I "." /I "C:\Qt\\include" /I "G:\DCED2_src" /I "G:\DCED2_src\include" /I "C:\Qt\\win32-msvc" /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "QT_NO_DEBUG" /Fo"DCED2___Win32_LG_Release/" /Fd"DCED2___Win32_LG_Release/" /FD -Zm200 /c 
+"G:\DCED2_src\src\addobjectdialog.cpp"
+"G:\DCED2_src\src\colorwidget.cpp"
+"G:\DCED2_src\src\documentoverview.cpp"
+"G:\DCED2_src\src\documentwidget.cpp"
+"G:\DCED2_src\src\globaldefs.cpp"
+"G:\DCED2_src\src\mafiasyntax.cpp"
+"G:\DCED2_src\src\main.cpp"
+"G:\DCED2_src\src\mainwidget.cpp"
+"G:\DCED2_src\src\MLWrapper.cpp"
+"G:\DCED2_src\src\objectlist.cpp"
+"G:\DCED2_src\src\objecttypes.cpp"
+"G:\DCED2_src\src\objectwidget.cpp"
+"G:\DCED2_src\src\preferencesdialog.cpp"
+"G:\DCED2_src\src\scenepropertiesdialog.cpp"
+"G:\DCED2_src\src\scriptwidget.cpp"
+"G:\DCED2_src\src\scriptworkspace.cpp"
+"G:\DCED2_src\moc\moc_addobjectdialog.cpp"
+"G:\DCED2_src\moc\moc_documentoverview.cpp"
+"G:\DCED2_src\moc\moc_MLWrapper.cpp"
+"G:\DCED2_src\moc\moc_objectlist.cpp"
+"G:\DCED2_src\moc\moc_objectwidget.cpp"
+"G:\DCED2_src\moc\moc_scenepropertiesdialog.cpp"
+"G:\DCED2_src\moc\moc_scriptwidget.cpp"
+]
+Creating command line "cl.exe @E:\DOCUME~1\LGs0pHT\LOCALS~1\Temp\RSP5D.tmp" 
+Creating temporary file "E:\DOCUME~1\LGs0pHT\LOCALS~1\Temp\RSP5E.tmp" with contents
+[
+"qt-mt.lib" "qtmain.lib" "kernel32.lib" "user32.lib" "gdi32.lib" "comdlg32.lib" "advapi32.lib" "shell32.lib" "ole32.lib" "oleaut32.lib" "uuid.lib" "imm32.lib" "winmm.lib" "wsock32.lib" "winspool.lib" "delayimp.lib" "odbc32.lib" "odbccp32.lib" /nologo /subsystem:windows /incremental:no /pdb:"LG_Release/LG_DCED2.pdb" /machine:IX86 /nodefaultlib:"libc.lib" /out:"LG_Release/LG_DCED2.exe" /libpath:"C:\Qt\\lib" /DELAYLOAD:comdlg32.dll /DELAYLOAD:wsock32.dll 
+.\DCED2___Win32_LG_Release\aboutdialog.obj
+.\DCED2___Win32_LG_Release\addobjectdialog.obj
+.\DCED2___Win32_LG_Release\colorwidget.obj
+.\DCED2___Win32_LG_Release\documentoverview.obj
+.\DCED2___Win32_LG_Release\documentwidget.obj
+.\DCED2___Win32_LG_Release\globaldefs.obj
+.\DCED2___Win32_LG_Release\mafiasyntax.obj
+.\DCED2___Win32_LG_Release\main.obj
+.\DCED2___Win32_LG_Release\mainwidget.obj
+.\DCED2___Win32_LG_Release\MLWrapper.obj
+.\DCED2___Win32_LG_Release\objectlist.obj
+.\DCED2___Win32_LG_Release\objecttypes.obj
+.\DCED2___Win32_LG_Release\objectwidget.obj
+.\DCED2___Win32_LG_Release\preferencesdialog.obj
+.\DCED2___Win32_LG_Release\propertylist.obj
+.\DCED2___Win32_LG_Release\propertynamelist.obj
+.\DCED2___Win32_LG_Release\questiondialog.obj
+.\DCED2___Win32_LG_Release\scenepropertiesdialog.obj
+.\DCED2___Win32_LG_Release\scriptmainwindow.obj
+.\DCED2___Win32_LG_Release\scriptwidget.obj
+.\DCED2___Win32_LG_Release\scriptworkspace.obj
+.\DCED2___Win32_LG_Release\moc_aboutdialog.obj
+.\DCED2___Win32_LG_Release\moc_addobjectdialog.obj
+.\DCED2___Win32_LG_Release\moc_colorwidget.obj
+.\DCED2___Win32_LG_Release\moc_documentoverview.obj
+.\DCED2___Win32_LG_Release\moc_documentwidget.obj
+.\DCED2___Win32_LG_Release\moc_mainwidget.obj
+.\DCED2___Win32_LG_Release\moc_MLWrapper.obj
+.\DCED2___Win32_LG_Release\moc_objectlist.obj
+.\DCED2___Win32_LG_Release\moc_objectwidget.obj
+.\DCED2___Win32_LG_Release\moc_preferencesdialog.obj
+.\DCED2___Win32_LG_Release\moc_propertylist.obj
+.\DCED2___Win32_LG_Release\moc_propertynamelist.obj
+.\DCED2___Win32_LG_Release\moc_questiondialog.obj
+.\DCED2___Win32_LG_Release\moc_scenepropertiesdialog.obj
+.\DCED2___Win32_LG_Release\moc_scriptmainwindow.obj
+.\DCED2___Win32_LG_Release\moc_scriptwidget.obj
+.\DCED2___Win32_LG_Release\moc_scriptworkspace.obj
+.\LG_Release\editor.res
+.\MafiaLib.lib
+]
+Creating command line "link.exe @E:\DOCUME~1\LGs0pHT\LOCALS~1\Temp\RSP5E.tmp"
+<h3>Output Window</h3>
+Compiling...
+addobjectdialog.cpp
+colorwidget.cpp
+documentoverview.cpp
+documentwidget.cpp
+globaldefs.cpp
+mafiasyntax.cpp
+main.cpp
+mainwidget.cpp
+MLWrapper.cpp
+objectlist.cpp
+objecttypes.cpp
+objectwidget.cpp
+preferencesdialog.cpp
+scenepropertiesdialog.cpp
+scriptwidget.cpp
+scriptworkspace.cpp
+moc_addobjectdialog.cpp
+moc_documentoverview.cpp
+moc_MLWrapper.cpp
+moc_objectlist.cpp
+Generating Code...
+Compiling...
+moc_objectwidget.cpp
+moc_scenepropertiesdialog.cpp
+moc_scriptwidget.cpp
+Generating Code...
+Linking...
+LINK : warning LNK4089: all references to "WINSPOOL.DRV" discarded by /OPT:REF
+
+
+
+<h3>Results</h3>
+LG_DCED2.exe - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

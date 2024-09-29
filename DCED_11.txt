@@ -1,0 +1,19 @@
+1.01 List:
+
+-Bug removed: SectorChangeDialog in every Object
+-Bug removed: SectorDropDownList does not work
+-Bug removed: Cannot duplicate an Object if the name of the duplication is shorter than the originals one
+-Bug removed: Flickering DC||ED if two List Objects are maximized
+-Bug removed: Wrong What's this entries for Pedestrians.
+-Bug removed: No What's this entries for Object definitions
+-Bug removed: Objects with special characters like < cannot be changed.
+
+1.01 Liste:
+
+-Fehler entfernt: SektorDialog in jedem Objekt
+-Fehler entfernt: Sektoren DropDown Liste funktioniert nicht
+-Fehler entfernt: Objekte werden nicht korrekt dupliziert wenn der Name der Duplikation kürzer ist als der des Originals
+-Fehler entfernt: Flackernder DC||ED wenn zwei ListenObjekte maximiert sind.
+-Fehler entfernt: Falsche What's this Einträge für Fußgäner
+-Fehler entfernt: Keine What's this Einträge für Objektdefinitionen
+-Fehler entfernt: Objekte mit Sonderzeichen wie < können nicht geändert werden.
