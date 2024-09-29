@@ -1,0 +1,152 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>FilterObjectsPage</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>FilterObjectsPage</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>600</width>
+            <height>480</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>ObjectsPage</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>0</number>
+        </property>
+        <widget class="QButtonGroup" row="0" column="1">
+            <property name="name">
+                <cstring>buttonGroupName</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>7</hsizetype>
+                    <vsizetype>4</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="title">
+                <string>Filter by Name</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QRadioButton" row="1" column="2">
+                    <property name="name">
+                        <cstring>radioNameEndsWith</cstring>
+                    </property>
+                    <property name="text">
+                        <string>ends with</string>
+                    </property>
+                </widget>
+                <widget class="QRadioButton" row="1" column="0">
+                    <property name="name">
+                        <cstring>radioNameStartsWith</cstring>
+                    </property>
+                    <property name="text">
+                        <string>starts with</string>
+                    </property>
+                </widget>
+                <widget class="QRadioButton" row="1" column="1">
+                    <property name="name">
+                        <cstring>radioNameContains</cstring>
+                    </property>
+                    <property name="text">
+                        <string>contains</string>
+                    </property>
+                    <property name="checked">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QLineEdit" row="0" column="0" rowspan="1" colspan="3">
+                    <property name="name">
+                        <cstring>lineEditName</cstring>
+                    </property>
+                    <property name="frameShape">
+                        <enum>LineEditPanel</enum>
+                    </property>
+                    <property name="frameShadow">
+                        <enum>Sunken</enum>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QTextEdit" row="1" column="1">
+            <property name="name">
+                <cstring>helpBox</cstring>
+            </property>
+            <property name="text">
+                <string>In this dialog you can filter the list so that, for example, only items with type 02 (light) are shown. You can also hide all items that don't start with, contain or end with the string you've typed into the line above before.</string>
+            </property>
+            <property name="wordWrap">
+                <enum>WidgetWidth</enum>
+            </property>
+        </widget>
+        <widget class="QButtonGroup" row="0" column="0" rowspan="2" colspan="1">
+            <property name="name">
+                <cstring>buttonGroupType</cstring>
+            </property>
+            <property name="title">
+                <string>Filter by Type</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <spacer row="1" column="2">
+                    <property name="name">
+                        <cstring>typeSpacer</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>80</width>
+                            <height>31</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QPushButton" row="1" column="1">
+                    <property name="name">
+                        <cstring>buttonTypeClear</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Clear Selection</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton" row="1" column="0">
+                    <property name="name">
+                        <cstring>buttonTypeSelectAll</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Select All</string>
+                    </property>
+                </widget>
+                <widget class="QListBox" row="0" column="0" rowspan="1" colspan="3">
+                    <property name="name">
+                        <cstring>listBoxType</cstring>
+                    </property>
+                    <property name="selectionMode">
+                        <enum>Multi</enum>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+    </grid>
+</widget>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

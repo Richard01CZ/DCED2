@@ -1,0 +1,1248 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>PreferencesDialog</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>PreferencesDialog</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>500</width>
+            <height>550</height>
+        </rect>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>500</width>
+            <height>550</height>
+        </size>
+    </property>
+    <property name="maximumSize">
+        <size>
+            <width>500</width>
+            <height>550</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>Preferences</string>
+    </property>
+    <property name="icon">
+        <pixmap>image0</pixmap>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLayoutWidget" row="3" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>layout1</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <spacer>
+                    <property name="name">
+                        <cstring>spacer1</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>392</width>
+                            <height>25</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>cancelButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Cancel</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>okButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>OK</string>
+                    </property>
+                    <property name="default">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QGroupBox" row="1" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>syntaxBox</cstring>
+            </property>
+            <property name="font">
+                <font>
+                </font>
+            </property>
+            <property name="title">
+                <string>Colours</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel" row="4" column="0">
+                    <property name="name">
+                        <cstring>dimsLabel</cstring>
+                    </property>
+                    <property name="backgroundOrigin">
+                        <enum>ParentOrigin</enum>
+                    </property>
+                    <property name="text">
+                        <string>Dims</string>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>"dim_act", "dim_flt", "dim_frm"</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton" row="4" column="2">
+                    <property name="name">
+                        <cstring>dimsColorButton</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string>...</string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="6" column="0">
+                    <property name="name">
+                        <cstring>digitsLabel</cstring>
+                    </property>
+                    <property name="backgroundOrigin">
+                        <enum>ParentOrigin</enum>
+                    </property>
+                    <property name="text">
+                        <string>Digits</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton" row="7" column="2">
+                    <property name="name">
+                        <cstring>quotationsColorButton</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string>...</string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="7" column="0">
+                    <property name="name">
+                        <cstring>quotationsLabel</cstring>
+                    </property>
+                    <property name="backgroundOrigin">
+                        <enum>ParentOrigin</enum>
+                    </property>
+                    <property name="text">
+                        <string>Quotations</string>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>"This is a text between two quotations"</string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="0" column="1">
+                    <property name="name">
+                        <cstring>standardColorLabel</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>30</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>30</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                    <property name="paletteBackgroundColor">
+                        <color>
+                            <red>0</red>
+                            <green>0</green>
+                            <blue>0</blue>
+                        </color>
+                    </property>
+                    <property name="frameShape">
+                        <enum>LineEditPanel</enum>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="QPushButton" row="5" column="2">
+                    <property name="name">
+                        <cstring>commentsColorButton</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string>...</string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="7" column="1">
+                    <property name="name">
+                        <cstring>quotationsColorLabel</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>30</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>30</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                    <property name="paletteBackgroundColor">
+                        <color>
+                            <red>230</red>
+                            <green>0</green>
+                            <blue>180</blue>
+                        </color>
+                    </property>
+                    <property name="frameShape">
+                        <enum>LineEditPanel</enum>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="QPushButton" row="2" column="2">
+                    <property name="name">
+                        <cstring>statementsColorButton</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string>...</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton" row="6" column="2">
+                    <property name="name">
+                        <cstring>digitsColorButton</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string>...</string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="2" column="0">
+                    <property name="name">
+                        <cstring>statementsLabel</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>62</width>
+                            <height>0</height>
+                        </size>
+                    </property>
+                    <property name="backgroundOrigin">
+                        <enum>ParentOrigin</enum>
+                    </property>
+                    <property name="text">
+                        <string>Statements</string>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>Statements, like "if", "goto", "wait", "end" etc.</string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="5" column="0">
+                    <property name="name">
+                        <cstring>commentsLabel</cstring>
+                    </property>
+                    <property name="backgroundOrigin">
+                        <enum>ParentOrigin</enum>
+                    </property>
+                    <property name="text">
+                        <string>Comments</string>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>//This is a comment</string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="3" column="0">
+                    <property name="name">
+                        <cstring>commandsLabel</cstring>
+                    </property>
+                    <property name="backgroundOrigin">
+                        <enum>ParentOrigin</enum>
+                    </property>
+                    <property name="text">
+                        <string>Commands</string>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>e.g. "enemy_movetocar", "detector_waitforuse", "frm_getpos" etc.</string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="3" column="1">
+                    <property name="name">
+                        <cstring>commandsColorLabel</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>30</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>30</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                    <property name="paletteBackgroundColor">
+                        <color>
+                            <red>0</red>
+                            <green>0</green>
+                            <blue>180</blue>
+                        </color>
+                    </property>
+                    <property name="frameShape">
+                        <enum>LineEditPanel</enum>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="0" column="0">
+                    <property name="name">
+                        <cstring>standardLabel</cstring>
+                    </property>
+                    <property name="backgroundOrigin">
+                        <enum>ParentOrigin</enum>
+                    </property>
+                    <property name="text">
+                        <string>Standard:</string>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>The standard text</string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="5" column="1">
+                    <property name="name">
+                        <cstring>commentsColorLabel</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>30</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>30</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                    <property name="paletteBackgroundColor">
+                        <color>
+                            <red>0</red>
+                            <green>125</green>
+                            <blue>0</blue>
+                        </color>
+                    </property>
+                    <property name="frameShape">
+                        <enum>LineEditPanel</enum>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="QPushButton" row="0" column="2">
+                    <property name="name">
+                        <cstring>standardColorButton</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string>...</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton" row="3" column="2">
+                    <property name="name">
+                        <cstring>commandsColorButton</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string>...</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton" row="1" column="2">
+                    <property name="name">
+                        <cstring>labelsColorButton</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>0</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                    <property name="text">
+                        <string>...</string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="4" column="1">
+                    <property name="name">
+                        <cstring>dimsColorLabel</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>30</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>30</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                    <property name="paletteBackgroundColor">
+                        <color>
+                            <red>255</red>
+                            <green>0</green>
+                            <blue>0</blue>
+                        </color>
+                    </property>
+                    <property name="frameShape">
+                        <enum>LineEditPanel</enum>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="2" column="1">
+                    <property name="name">
+                        <cstring>statementsColorLabel</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>30</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>30</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                    <property name="paletteBackgroundColor">
+                        <color>
+                            <red>0</red>
+                            <green>0</green>
+                            <blue>180</blue>
+                        </color>
+                    </property>
+                    <property name="frameShape">
+                        <enum>LineEditPanel</enum>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="1" column="1">
+                    <property name="name">
+                        <cstring>labelsColorLabel</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>30</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>30</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                    <property name="paletteBackgroundColor">
+                        <color>
+                            <red>0</red>
+                            <green>0</green>
+                            <blue>180</blue>
+                        </color>
+                    </property>
+                    <property name="frameShape">
+                        <enum>LineEditPanel</enum>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="1" column="0">
+                    <property name="name">
+                        <cstring>labelsLabel</cstring>
+                    </property>
+                    <property name="backgroundOrigin">
+                        <enum>ParentOrigin</enum>
+                    </property>
+                    <property name="text">
+                        <string>Labels:</string>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>Labels, e.g. "label 101"</string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="6" column="1">
+                    <property name="name">
+                        <cstring>digitsColorLabel</cstring>
+                    </property>
+                    <property name="minimumSize">
+                        <size>
+                            <width>30</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                    <property name="maximumSize">
+                        <size>
+                            <width>30</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                    <property name="paletteBackgroundColor">
+                        <color>
+                            <red>0</red>
+                            <green>0</green>
+                            <blue>0</blue>
+                        </color>
+                    </property>
+                    <property name="frameShape">
+                        <enum>LineEditPanel</enum>
+                    </property>
+                    <property name="text">
+                        <string></string>
+                    </property>
+                </widget>
+                <spacer row="0" column="3">
+                    <property name="name">
+                        <cstring>standardSpacer</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Maximum</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>30</width>
+                            <height>21</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QCheckBox" row="0" column="4">
+                    <property name="name">
+                        <cstring>standardBoldCheckBox</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>1</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Bold</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox" row="0" column="5">
+                    <property name="name">
+                        <cstring>standardItalicCheckBox</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <italic>1</italic>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Italic</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox" row="0" column="6">
+                    <property name="name">
+                        <cstring>standardUnderlineCheckBox</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <underline>1</underline>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Underline</string>
+                    </property>
+                </widget>
+                <spacer row="1" column="3">
+                    <property name="name">
+                        <cstring>labelsSpacer</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Maximum</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>30</width>
+                            <height>21</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QCheckBox" row="1" column="4">
+                    <property name="name">
+                        <cstring>labelsBoldCheckBox</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>1</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Bold</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox" row="1" column="5">
+                    <property name="name">
+                        <cstring>labelsItalicCheckBox</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <italic>1</italic>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Italic</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox" row="1" column="6">
+                    <property name="name">
+                        <cstring>labelsUnderlineCheckBox</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <underline>1</underline>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Underline</string>
+                    </property>
+                </widget>
+                <spacer row="2" column="3">
+                    <property name="name">
+                        <cstring>statementsSpacer</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Maximum</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>30</width>
+                            <height>21</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QCheckBox" row="2" column="4">
+                    <property name="name">
+                        <cstring>statementsBoldCheckBox</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>1</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Bold</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox" row="2" column="5">
+                    <property name="name">
+                        <cstring>statementsItalicCheckBox</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <italic>1</italic>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Italic</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox" row="2" column="6">
+                    <property name="name">
+                        <cstring>statementsUnderlineCheckBox</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <underline>1</underline>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Underline</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox" row="3" column="4">
+                    <property name="name">
+                        <cstring>commandsBoldCheckBox</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>1</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Bold</string>
+                    </property>
+                </widget>
+                <spacer row="3" column="3">
+                    <property name="name">
+                        <cstring>commandsSpacer</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Maximum</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>30</width>
+                            <height>21</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QCheckBox" row="3" column="5">
+                    <property name="name">
+                        <cstring>commandsItalicCheckBox</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <italic>1</italic>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Italic</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox" row="3" column="6">
+                    <property name="name">
+                        <cstring>commandsUnderlineCheckBox</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <underline>1</underline>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Underline</string>
+                    </property>
+                </widget>
+                <spacer row="4" column="3">
+                    <property name="name">
+                        <cstring>dimsSpacer</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Maximum</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>30</width>
+                            <height>21</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QCheckBox" row="4" column="4">
+                    <property name="name">
+                        <cstring>dimsBoldCheckBox</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>1</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Bold</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox" row="4" column="5">
+                    <property name="name">
+                        <cstring>dimsItalicCheckBox</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <italic>1</italic>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Italic</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox" row="4" column="6">
+                    <property name="name">
+                        <cstring>dimsUnderlineCheckBox</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <underline>1</underline>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Underline</string>
+                    </property>
+                </widget>
+                <spacer row="5" column="3">
+                    <property name="name">
+                        <cstring>commentsSpacer</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Maximum</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>30</width>
+                            <height>21</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QCheckBox" row="5" column="4">
+                    <property name="name">
+                        <cstring>commentsBoldCheckBox</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>1</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Bold</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox" row="5" column="5">
+                    <property name="name">
+                        <cstring>commentsItalicCheckBox</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <italic>1</italic>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Italic</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox" row="5" column="6">
+                    <property name="name">
+                        <cstring>commentsUnderlineCheckBox</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <underline>1</underline>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Underline</string>
+                    </property>
+                </widget>
+                <spacer row="6" column="3">
+                    <property name="name">
+                        <cstring>digitsSpacer</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Maximum</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>30</width>
+                            <height>21</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QCheckBox" row="6" column="4">
+                    <property name="name">
+                        <cstring>digitsBoldCheckBox</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>1</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Bold</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox" row="6" column="5">
+                    <property name="name">
+                        <cstring>digitsItalicCheckBox</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <italic>1</italic>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Italic</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox" row="6" column="6">
+                    <property name="name">
+                        <cstring>digitsUnderlineCheckBox</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <underline>1</underline>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Underline</string>
+                    </property>
+                </widget>
+                <spacer row="7" column="3">
+                    <property name="name">
+                        <cstring>quotationsSpacer</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Maximum</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>30</width>
+                            <height>21</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QCheckBox" row="7" column="4">
+                    <property name="name">
+                        <cstring>quotationsBoldCheckBox</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <bold>1</bold>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Bold</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox" row="7" column="5">
+                    <property name="name">
+                        <cstring>quotationsItalicCheckBox</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <italic>1</italic>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Italic</string>
+                    </property>
+                </widget>
+                <widget class="QCheckBox" row="7" column="6">
+                    <property name="name">
+                        <cstring>quotationsUnderlineCheckBox</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <underline>1</underline>
+                        </font>
+                    </property>
+                    <property name="text">
+                        <string>Underline</string>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QGroupBox" row="0" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>fontBox</cstring>
+            </property>
+            <property name="title">
+                <string>Fonts</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel" row="0" column="0">
+                    <property name="name">
+                        <cstring>previewFontLabel</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>5</hsizetype>
+                            <vsizetype>4</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="text">
+                        <string>Preview Box:   </string>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="1" column="0">
+                    <property name="name">
+                        <cstring>editFontLabel</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>4</hsizetype>
+                            <vsizetype>5</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="text">
+                        <string>Edit Window:   </string>
+                    </property>
+                </widget>
+                <widget class="QComboBox" row="1" column="1">
+                    <property name="name">
+                        <cstring>editFontComboBox</cstring>
+                    </property>
+                </widget>
+                <widget class="QComboBox" row="0" column="1">
+                    <property name="name">
+                        <cstring>previewFontComboBox</cstring>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QGroupBox" row="2" column="0">
+            <property name="name">
+                <cstring>previewPreviewBox</cstring>
+            </property>
+            <property name="margin">
+                <number>0</number>
+            </property>
+            <property name="title">
+                <string>Preview Box</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>5</number>
+                </property>
+                <widget class="QTextEdit" row="0" column="0">
+                    <property name="name">
+                        <cstring>previewPreviewTextEdit</cstring>
+                    </property>
+                    <property name="textFormat">
+                        <enum>PlainText</enum>
+                    </property>
+                    <property name="text">
+                        <string>//nahodny dite2
+
+dim_flt 1
+dim_frm 1
+FindFrame 0
+
+label 10
+  rnd 0, 10                
+  let flt[0] = flt[0] * 1000
+  let flt[0] = flt[0] + 7000
+  wait flt[0]
+  frm_seton 0, 1
+goto 10
+end</string>
+                    </property>
+                    <property name="wordWrap">
+                        <enum>NoWrap</enum>
+                    </property>
+                    <property name="undoRedoEnabled">
+                        <bool>false</bool>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QGroupBox" row="2" column="1">
+            <property name="name">
+                <cstring>editPreviewBox</cstring>
+            </property>
+            <property name="title">
+                <string>Edit Window</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QTextEdit" row="0" column="0">
+                    <property name="name">
+                        <cstring>editPreviewTextEdit</cstring>
+                    </property>
+                    <property name="textFormat">
+                        <enum>PlainText</enum>
+                    </property>
+                    <property name="text">
+                        <string>//nahodny dite2
+
+dim_flt 1
+dim_frm 1
+FindFrame 0
+
+label 10
+  rnd 0, 10                
+  let flt[0] = flt[0] * 1000
+  let flt[0] = flt[0] + 7000
+  wait flt[0]
+  frm_seton 0, 1
+goto 10
+end</string>
+                    </property>
+                    <property name="wordWrap">
+                        <enum>NoWrap</enum>
+                    </property>
+                    <property name="undoRedoEnabled">
+                        <bool>false</bool>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+    </grid>
+</widget>
+<images>
+    <image name="image0">
+        <data format="XPM.GZ" length="2013">789c75945953db301446dff32b3ce88de95c1cc7eb74fac0be942decd0e983369304924016b64eff7b753f39101cea436672b89f25e55af2ca7270757c102caf34c61339e9ea4077e4285836d37efff5d7ef1f7f1a4bcd34707f7916444bdf1a4bed49a083c3e1c0b288072722c2c54ee7f08c812b78ce20df81170e837a01b70c3c82970cf29abd1532a81b789381fb7ac4c0051c177c171e33186f084f19d4f7d8e388417d0a4f1878179e33f0debbfbf5ddc2cbb84c349c9b2370bb9fef1eae18cc27d9d32683fa181e33a863bc3461e0169e31c8ab9967988f5ee09a81f7d9d17eff7b46f08241bd844b0675f42bd3992efcf3da81dbcc167e3df9bbfb7aca9e877958790c778fb7f226bc95b70af45760be3cc99302fda333789aa7551efdc93306f9011c17eae87fae1938fa9f1b06fe0c2f19dcffc85eb418d437e1b290daef9f0db82a94f2fd7d856b06be3e73e9fbf506b70cc6bf83970c1cfd962183fc163c96b1f6e3afc21306be06d7522b3ffef6cc8df79fec2a5251e5984f650ce6c3fe71cb2facef2ff687924a1aff7b71be142ed4715e9456b3f1f7e1461983f5d313bb8e19f801dcb5bb1a9fd84d68c2d2e7f17c4cc4c00f676e7dff32786ce22a9fc03393558ef3650a067e04770b2afd78ad77f7799c27830b1ec2adb1551de7c7940cfc949d5f2755fd049edab4f263b8dbd0a55f2fde0778bc7e3d6db8b4b2cae3fd661503c779b29a8163bf595e905fdfcdccabfbafd9cba6c3fb153c7178bf84f3f6f57e015765f5fbdb930f48902435ff9ff6c4675c4593214b25dd5287bad4739f3bf7ed7e2ed3a7010de9811e6904c634a1293dd1f35ce6855ee98d56698dd669c3b1495bb44d3b9fe6daa53dfa49fb7440877444c7d4a6133aa5b3f98c4b9dd3055dd2155dd34d9508a959cb440b8916c5b58c594824942e64ea898cf25aa6a8270409b1b09e7a420af53923b44f0823ac28c5ade8d49f05cf25baa2e73e5d7127eebf7a5e1f88beeb774f0cc4f0eb8c78108f62846f63f19f71488be9e759aaccdfef8d7f5072e282</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>okButton</sender>
+        <signal>clicked()</signal>
+        <receiver>PreferencesDialog</receiver>
+        <slot>accept()</slot>
+    </connection>
+    <connection>
+        <sender>cancelButton</sender>
+        <signal>clicked()</signal>
+        <receiver>PreferencesDialog</receiver>
+        <slot>reject()</slot>
+    </connection>
+</connections>
+<layoutdefaults spacing="5" margin="8"/>
+</UI>

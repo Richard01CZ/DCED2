@@ -1,0 +1,377 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>FilterListDialog</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>FilterListDialog</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>508</width>
+            <height>249</height>
+        </rect>
+    </property>
+    <property name="minimumSize">
+        <size>
+            <width>0</width>
+            <height>0</height>
+        </size>
+    </property>
+    <property name="caption">
+        <string>Filter current list</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QTextEdit" row="1" column="1">
+            <property name="name">
+                <cstring>textEdit1</cstring>
+            </property>
+            <property name="text">
+                <string>In this dialog you can filter the list so that, for example, only items with type 05 are shown. You can also hide all items that don't start with, contain or end with the string you've typed into the line above before.</string>
+            </property>
+            <property name="wordWrap">
+                <enum>WidgetWidth</enum>
+            </property>
+        </widget>
+        <widget class="QButtonGroup" row="0" column="1">
+            <property name="name">
+                <cstring>buttonGroupName</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>7</hsizetype>
+                    <vsizetype>4</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="title">
+                <string>Filter by Name</string>
+            </property>
+            <widget class="QRadioButton">
+                <property name="name">
+                    <cstring>radioNameEndsWith</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>154</x>
+                        <y>60</y>
+                        <width>67</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>ends with</string>
+                </property>
+            </widget>
+            <widget class="QRadioButton">
+                <property name="name">
+                    <cstring>radioNameStartsWith</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>8</x>
+                        <y>60</y>
+                        <width>70</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>starts with</string>
+                </property>
+            </widget>
+            <widget class="QRadioButton">
+                <property name="name">
+                    <cstring>radioNameContains</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>84</x>
+                        <y>60</y>
+                        <width>63</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>contains</string>
+                </property>
+                <property name="checked">
+                    <bool>true</bool>
+                </property>
+            </widget>
+            <widget class="QLineEdit">
+                <property name="name">
+                    <cstring>lineEditName</cstring>
+                </property>
+                <property name="geometry">
+                    <rect>
+                        <x>10</x>
+                        <y>30</y>
+                        <width>210</width>
+                        <height>21</height>
+                    </rect>
+                </property>
+                <property name="frameShape">
+                    <enum>LineEditPanel</enum>
+                </property>
+                <property name="frameShadow">
+                    <enum>Sunken</enum>
+                </property>
+            </widget>
+        </widget>
+        <widget class="QLayoutWidget" row="2" column="1">
+            <property name="name">
+                <cstring>bottomLayout</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <spacer>
+                    <property name="name">
+                        <cstring>bottomSpacer</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>251</width>
+                            <height>31</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>buttonOK</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Ok</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>buttonCancel</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Cancel</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QButtonGroup" row="0" column="0" rowspan="3" colspan="1">
+            <property name="name">
+                <cstring>buttonGroupType</cstring>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>251</width>
+                    <height>0</height>
+                </size>
+            </property>
+            <property name="title">
+                <string>Filter by Type</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <spacer row="1" column="2">
+                    <property name="name">
+                        <cstring>spacer6</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>80</width>
+                            <height>31</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QPushButton" row="1" column="0">
+                    <property name="name">
+                        <cstring>buttonTypeSelectAll</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Select All</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton" row="1" column="1">
+                    <property name="name">
+                        <cstring>buttonTypeClear</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Clear Selection</string>
+                    </property>
+                </widget>
+                <widget class="QListBox" row="0" column="0" rowspan="1" colspan="3">
+                    <item>
+                        <property name="text">
+                            <string>01: Non-solid, visible object</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>02: Player</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>04: Car</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>05: Standart script</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>06: Door definitions</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>08: Trolley</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>09: A chair in the villa-mission</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>12: List of traffic car names</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>18: List of names of human models</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>20: Part of the scene.4ds</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>21: Dogs</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>22: Plane</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>23: Solid Objects (with Clipping)</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>24: Rail route ("lucky bastard" mission only)</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>25: Pumpar</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>27: Enemy with script</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>28: Race cameras</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>30: Wagons ("lucky bastard" mission only)</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>34: Clocks</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>35: Boxes</string>
+                        </property>
+                    </item>
+                    <item>
+                        <property name="text">
+                            <string>36: Truck</string>
+                        </property>
+                    </item>
+                    <property name="name">
+                        <cstring>listBoxType</cstring>
+                    </property>
+                    <property name="selectionMode">
+                        <enum>Multi</enum>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>buttonCancel</sender>
+        <signal>clicked()</signal>
+        <receiver>FilterListDialog</receiver>
+        <slot>reject()</slot>
+    </connection>
+    <connection>
+        <sender>buttonOK</sender>
+        <signal>clicked()</signal>
+        <receiver>FilterListDialog</receiver>
+        <slot>accept()</slot>
+    </connection>
+    <connection>
+        <sender>buttonTypeSelectAll</sender>
+        <signal>clicked()</signal>
+        <receiver>FilterListDialog</receiver>
+        <slot>selectAllTypes()</slot>
+    </connection>
+    <connection>
+        <sender>buttonTypeClear</sender>
+        <signal>clicked()</signal>
+        <receiver>listBoxType</receiver>
+        <slot>clearSelection()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>listBoxType</tabstop>
+    <tabstop>buttonTypeSelectAll</tabstop>
+    <tabstop>buttonTypeClear</tabstop>
+    <tabstop>lineEditName</tabstop>
+    <tabstop>radioNameContains</tabstop>
+    <tabstop>buttonOK</tabstop>
+    <tabstop>buttonCancel</tabstop>
+    <tabstop>textEdit1</tabstop>
+</tabstops>
+<slots>
+    <slot>selectAllTypes()</slot>
+    <slot>selectAll()</slot>
+</slots>
+<pixmapinproject/>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

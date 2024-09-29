@@ -1,0 +1,59 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>Form2</class>
+<widget class="QMainWindow">
+    <property name="name">
+        <cstring>Form2</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>600</width>
+            <height>480</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Form2</string>
+    </property>
+</widget>
+<menubar>
+    <property name="name">
+        <cstring>MenuBarEditor</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>600</width>
+            <height>29</height>
+        </rect>
+    </property>
+    <item text="Menu" name="PopupMenuEditor">
+        <action name="menuHelloAction"/>
+        <item text="Hello" name="ActionItem" accel="">
+            <action name="menuHelloFuck_itAction"/>
+        </item>
+    </item>
+</menubar>
+<toolbars>
+</toolbars>
+<actions>
+    <action>
+        <property name="name">
+            <cstring>menuHelloAction</cstring>
+        </property>
+        <property name="text">
+            <string>Hello</string>
+        </property>
+    </action>
+    <action>
+        <property name="name">
+            <cstring>menuHelloFuck_itAction</cstring>
+        </property>
+        <property name="text">
+            <string>Fuck it</string>
+        </property>
+    </action>
+</actions>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

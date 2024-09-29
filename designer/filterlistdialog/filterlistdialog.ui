@@ -1,0 +1,157 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>FilterListDialog</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>FilterListDialog</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>604</width>
+            <height>418</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Filter Current List</string>
+    </property>
+    <property name="icon">
+        <pixmap>image0</pixmap>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>7</number>
+        </property>
+        <widget class="QLayoutWidget" row="1" column="0">
+            <property name="name">
+                <cstring>bottomLayout</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>0</number>
+                </property>
+                <property name="spacing">
+                    <number>11</number>
+                </property>
+                <spacer>
+                    <property name="name">
+                        <cstring>bottomSpacer</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>251</width>
+                            <height>31</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>buttonOK</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Ok</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>buttonCancel</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Cancel</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QWidgetStack" row="0" column="0">
+            <property name="name">
+                <cstring>filterListStack</cstring>
+            </property>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>ObjectDefinitionsPage</cstring>
+                </property>
+                <attribute name="id">
+                    <number>0</number>
+                </attribute>
+                <grid>
+                    <property name="name">
+                        <cstring>unnamed</cstring>
+                    </property>
+                    <property name="margin">
+                        <number>0</number>
+                    </property>
+                    <widget class="FilterObjectDefinitionsPage" row="0" column="0">
+                        <property name="name">
+                            <cstring>filterObjectDefinitionsPage1</cstring>
+                        </property>
+                    </widget>
+                </grid>
+            </widget>
+            <widget class="QWidget">
+                <property name="name">
+                    <cstring>ObjectsPage</cstring>
+                </property>
+                <attribute name="id">
+                    <number>1</number>
+                </attribute>
+            </widget>
+        </widget>
+    </grid>
+</widget>
+<customwidgets>
+    <customwidget>
+        <class>FilterObjectDefinitionsPage</class>
+        <header location="global">E:/Programmierung/DCED2/designer/filterlistdialog/filterobjectdefinitionspage.h</header>
+        <sizehint>
+            <width>-1</width>
+            <height>-1</height>
+        </sizehint>
+        <container>0</container>
+        <sizepolicy>
+            <hordata>5</hordata>
+            <verdata>5</verdata>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+        <pixmap>image1</pixmap>
+    </customwidget>
+</customwidgets>
+<images>
+    <image name="image0">
+        <data format="XPM.GZ" length="2061">789c75d4c772d4401006e0bb9f62cb7d7351cd4aa334457120471b27c086e230719dd6719da07877d47f6b9dcae8f7e573f78c46da193d5d1a6dad2e8f969e2e9ccddc6c378cc28e3b1d2dc5f3e9f4fae7afe77f16168b66d4ffd9f1a85c7cb2b0b8361b85d1cad16112f0410f2a5c6b4280a770aca38df0219c8dad31982fc465d5b93c8677e1a60cc6c0496c0a097ca96e2befe07770d9a5a4f37f8171c111ae25f01adcd832eb7c63b8ed8df510ee6f3a6bd49c612f81bfab6d35f4ebfc5182fa0a9c25a8b3daa6acef2788ab42029fc3a58db9832bd848307e07aead1dd6f356ed8aacf7bb861b09bc3d38d73adf156c25f031ec24b0ceef25f0048e12dc5ffb9304f5cf7076d570ff23713d96c01e2e24f01bd834b9d3f91d8c0b5e86bbc6b7785f3c83ad0d51ddaa5d9b75fc1e9c5a6bf5797fc0d9657dbf44e2a6746dd2f1abb0f1e361bd5b70650bafcfa3fdb8301efbadb112d43b753f5f85fadee030fcfe78fec64bd06fe1e8eb613dd8afed5882fa26ec24f06b384be0137137f645d2dfbb811b3f9c0f42ddd612d43fc14d30fabc34195c65ac975fc02e98e17ced8b5d1bdad4a21fe7cf0509ea1fc4de49e05375b4fafe09fbd70709eaafe01c7cc47e23f4072381717e422541ffba3aa6acf7c7fe0c8d04f5f7708a3ee9fe35e21824e8c7f723e242fd9b3a399d8f37c4a994a01fdf9f6424a8bf84ab3cec07c27e4d8d04c6f72b5909fa8bc139e37d13ce6b7212d47fc35e82fabe3a17c379aee12081bfc2510297302e8cc7f9e84717fa7d229c875c4be033181b06e33fc29d04d63a2efd38cfc3c474ab796e7ba43ecfe33d773b1e7669cfc3ffdeb79eb79b9a6377dbf7c87a3c078e9c38f3e47ed7cd7a767897f7789f0f78ca877defd16dd7b09e639ef0099ff219cff89c2ff8b2efba9a77e9f788aff937bfe097fc8a5ff31b7ecbeff87d3ff3d59d353bfec01ff9137fe6655ee12fbcca6bbcce1bf3aee15e9bfc95bff177deea3bb6f9078fb9e0920d57b2ae9b356f72cd0db7dcb1ed5f0e91e39a3c058a779f9d12659ad00eedd21eed73490734a5433aa2e3fbbf299dd0299dd1acef386743177479ff1dde0d5d3dfebbff3f8b7f9f2dfc03b224f1f6</data>
+    </image>
+    <image name="image1">
+        <data format="XPM.GZ" length="4830">789c9597c972e3480e40eff5158ec2ada203cd3549c6c41cbcc9b6bccabbddd1078014bdcb9b6449ee987f9f240072caac9e4357d6c1cf5812890490f4ef3f562e8ff6577efcfeed7d4ad3bb72a5bca5b7951fd5ece969f9c79ffffeebdbf7285a69fec7f14af4fdb76fdf47d39572e5e079326e00c10304f24ff8b9c7d463ee71d9e3aac7e31ed70de741b3842f7bf2418f275f19fabcdee351cffea227ef9d079e7abcd6e3a3afccfb3dff370d53d42c61f5e79a25bcd9b3dfebd9df365c24cd127e6c38ce9b257cdeb35ff4e2ebdf5f221c354be4cb8ec53fbc762cf1c14bc7b21f541d93f88b3b2e85d38eab86e94c3869f7a359c7eaffa463b1a773e344e3a1838e450e8b8ed5bf13ce7d3ed57e4b989a02127dadaf2aa843cdc769c361e097c633308ec25858ceeb295239cb79c3384ccdff76c7b23f14c269e8ccdfa9716ef6b5b18f407857d88585e57bbf65b39f18971a0fc8fd7b6fc624f713925f923f2e8d4b3d1f49bd79aa54ee5b5d388a4cbed9b1c627f909c7516afea51ebcd0997d261c455998cafd3ae35c1902e13caacc3e528e03936f085354ab9ce7ca711864c2c38eb59ed59ee3d0ec73e3d858e64154c65128f50752cf51ede5cab571128a3f92fb8bc3b850861b630a0bd94fe28bb3240c84696afd55ab9cd28ed5ff55c3befc4af32ff3208992b1ea83e437493d6bbdbe19d7a1d40b4a3f24655a583ddf09d729ab9cc286d3202d8c63e3560ec6a5b1cc63293fedff4fe128adb5dee051d905d62f92af34766128f39d578dad5f79d9b1c8e9bee528147f43e358ed018593569fa55ed3d4c5c63b2d6bfdb1e42b752ed1f8e8c238d5f8e1503873a9f58bccefb470b99da76cd9f22bf592922bccdf67cb91d6b7dc6fca8eacffe72dab9cd89843391f3d0897ad9ce53ed3cab5fd77655cd9f9b65ab6fe7aec58eb5de6493aeef62363d6fcd1d0b89d0f8396351ed478ea66895cefbbf6fe74bfb9f158f559e6930bb3d0e2298cadff41de179764b1c573689c443a6f6263a7f54e926f977ab9be1f07c6765fb86f6cfa2cf9742ef31343fc7d1ac791be77324f5c96d9fd90da53e69451eacd55cd127b39af1b6795ed1776ace7957999b93c377f4fc685c9655e66599e45daffa171aee7a58f8e557e6c6cf678d8b1cebf3d635239497d7af3562efd9c51b384af1bce1b75cdefbb70519456efac4c81ce5bdce958e78b7e0f95d4e64fee37af3c6b7cbbc689f5e34ecbaa4ff2bee635c5b1e6e7dd3889357ee98f22f0fafabedd1abb48e31f1a17165fd0b1eacb7b5c8464f30a8f8cc9e2b96859ef07e4fe8b880a8d8f6f8c3992f9c9b38e757fc96f91501a6bbfc97d158e6c9e8231077a7f24f92e320eb41ef1d838d4f9cc771dabfcc4d8de139eb66cfbcb7b5ee4ad3ee5c651c4b2bff47f517062efd39971aaef2bc8fb511087363fa7c6364f59eab5e0367e18185b7ff2bd716af996fa2b4acf1adfc8d8fa0f0be3ccde2be9d7a2f2fbebf9c038b5f7eadcb87dcf9d71a14ce38ef5ef013dff9873ad77d83626abef59c7aaaff9a93948b41e578d0bcd1f3f1893de27cb7b4981f7aff363d798b43ee1c198ed7d967aa490138d87768c0bb56732b67e857b63b6f929f54a3157e6ffba638d47e639f976b5f928f1139589d59be49faa926dfec87b48e3b2b47920fd46358f9dd8a3dc3f075c3bfd9e977cb1ff605326a9578eaac4def7bb966dfe497ed87f7e64fa9ea2719a6affad193b6379af386df5f1c338b5fd653e72e63f67e43e68d7d899fcd338339e77ace75b35ce8de5bde39c4b92fce352b9932f8c0b6596fc70558dedfee4fb8ec79e255fa369b3109090b1c40ac7bd55f9dfb297c268daea638d37788b7778ff37eb011ff10927deea59f5bdef1b7cc1577cc3779ce20c3f708e0b5ce2a75fabb886ebb8819b38c0d2f4c9fb7ec52ddcc61d1ce22eeee13e1ee0211ee1088ff1044ff10ccff1022f4d9f7d24575efb1a030c31c21813bf527498618e058e0001807062faa58ff21d180328a1c218c650c30ddcfa9f2ab8837b788047afff04ad7ee5f5a738846778815778837798c20c3e600e0b58c227ac8aff355837fdb1d79fe12e6c78e9260c600bb6610786b00b7bdec33e1cc0a1d73f82d14ffa1f700c2770ea7d9fc1395cc0a5d7bc826b08bc8f10a25ff4e7107b49022938c820f7da051e1212c09288f817fd259598504563aac5f72bddd02dddd1bdd77fa0c75ff417f484294de083fca9e9855ebdc51bbdd39466f441f35fe3a1052d31a64f5aa5355aa70ddaf4fb0d688bb66987867d7ddaa53ddaf7fa0774484734a2633aa1533aa373baa04bbafa1bffd71450880954fe2ffd98fc7b45ce6b9ffbcf809c8a2ffa153e30e23103133397fece96de6ec9155df0986bbee1db2ff755fa8a5de73bbee7077ee4279ef033bff02bbff13b4f79c61f3ce7c54ff5c0bebe37f08c97fcc9abbcc6ebbcc19b3ce02dbae26ddee121eff2de4ff5e67ff2f57d0effe71f2f788ff77faa67f0110df002c8efb9e6cff575adf9df92d7eefac55b3c7b8b4b9cc004d661d45beb30f1fb5ffeaf1fff41bfffe75fdffe0b4c602e16</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>buttonOK</sender>
+        <signal>clicked()</signal>
+        <receiver>FilterListDialog</receiver>
+        <slot>accept()</slot>
+    </connection>
+    <connection>
+        <sender>buttonCancel</sender>
+        <signal>clicked()</signal>
+        <receiver>FilterListDialog</receiver>
+        <slot>accept()</slot>
+    </connection>
+</connections>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>filterobjectdefinitionspage.h</includehint>
+</includehints>
+</UI>

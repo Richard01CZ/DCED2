@@ -1,0 +1,201 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>CarListDialog</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>CarListDialog</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>484</width>
+            <height>230</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Traffic Car List</string>
+    </property>
+    <property name="icon">
+        <pixmap>image0</pixmap>
+    </property>
+    <property name="sizeGripEnabled">
+        <bool>true</bool>
+    </property>
+    <property name="modal">
+        <bool>true</bool>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QPushButton" row="0" column="1">
+            <property name="name">
+                <cstring>newCarButton</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>5</hsizetype>
+                    <vsizetype>0</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="text">
+                <string>&amp;New Car</string>
+            </property>
+            <property name="accel">
+                <string>Alt+N</string>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="1" column="1">
+            <property name="name">
+                <cstring>deleteCarButton</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>5</hsizetype>
+                    <vsizetype>0</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="text">
+                <string>&amp;Delete Car</string>
+            </property>
+            <property name="accel">
+                <string>Alt+D</string>
+            </property>
+        </widget>
+        <widget class="QListBox" row="0" column="0" rowspan="3" colspan="1">
+            <property name="name">
+                <cstring>carListBox</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>7</hsizetype>
+                    <vsizetype>7</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+        </widget>
+        <widget class="QLayoutWidget" row="3" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>bottomLayout</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <spacer>
+                    <property name="name">
+                        <cstring>bottomSpacer</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>261</width>
+                            <height>21</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>okButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;OK</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+O</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>cancelButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Cancel</string>
+                    </property>
+                    <property name="accel">
+                        <string>Alt+C</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <widget class="QGroupBox" row="2" column="1">
+            <property name="name">
+                <cstring>carPropertiesBox</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>0</hsizetype>
+                    <vsizetype>5</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>163</width>
+                    <height>0</height>
+                </size>
+            </property>
+            <property name="title">
+                <string>Car &amp;Properties</string>
+            </property>
+            <property name="flat">
+                <bool>false</bool>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLineEdit" row="0" column="1">
+                    <property name="name">
+                        <cstring>carNameInput</cstring>
+                    </property>
+                    <property name="font">
+                        <font>
+                            <pointsize>10</pointsize>
+                        </font>
+                    </property>
+                </widget>
+                <widget class="QLabel" row="0" column="0">
+                    <property name="name">
+                        <cstring>carNameLabel</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Name:</string>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+    </grid>
+</widget>
+<images>
+    <image name="image0">
+        <data format="XPM.GZ" length="1325">789c55d35d6f21711886f1739f62a267b25153336364b307de4ab594564b6df6608c51b443eb9dcd7ef775ddf94b782e12bf67263308d729abd76a58a9ebc47215ac26a1158e8385951aaee378fffbcfafbf89a4ed59c787e75876f2472299b642ab399f45bc3e9e6c5d6534307fc94fe83904c7974773d0f5084e602e2238847e86e0978e3a0457a24f702f06041fc490e0dbe595af745f8760a01b0d080e60de23e88b01c15b9dec12bc173d8219516f0bde89238237ba944db024fa047be28060050636c1aee810b445976059d4c0ba3820981523823b38b0096e459d0d476244f0198619822fa24d702a660916448f605b0c08cec421c1a238225883c30cc147314bf0557408c6a24bf05bcc137c123570238e08bec3c821b8105d822dd123f821fa04e7a2be1d188921c1a5a8816b38b2091e44876055f4083644fd5660530c0876c401c1bea8ef0e3aa23e2174c588a0276af4e73dcef1b761264c9bdd301abd9b199bdd248aa61f66ccee338ae2d9dc8cd97d7dc7f16269c6ec56ebe9663bdd4db79bdd6c6d76fb43a1582a572a8562f9f670da556bb552e9ae5eabddd7ab66f7d0389bd3aef9d86ab7dbadf6d373b379da755e5ebbdde3b3d7ed74cceead1fc7193b8e6f7ad97effb473cee6b473cfe6b4f3cec6ec72fed9e4d3c97f3f13ff01c5ea3d42</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>okButton</sender>
+        <signal>clicked()</signal>
+        <receiver>CarListDialog</receiver>
+        <slot>accept()</slot>
+    </connection>
+    <connection>
+        <sender>cancelButton</sender>
+        <signal>clicked()</signal>
+        <receiver>CarListDialog</receiver>
+        <slot>reject()</slot>
+    </connection>
+</connections>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

@@ -1,0 +1,194 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>deleteDialog</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>deleteDialog</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>3</y>
+            <width>249</width>
+            <height>108</height>
+        </rect>
+    </property>
+    <property name="sizePolicy">
+        <sizepolicy>
+            <hsizetype>4</hsizetype>
+            <vsizetype>4</vsizetype>
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+        </sizepolicy>
+    </property>
+    <property name="caption">
+        <string>Delete this Object?</string>
+    </property>
+    <property name="modal">
+        <bool>true</bool>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <property name="margin">
+            <number>7</number>
+        </property>
+        <property name="spacing">
+            <number>5</number>
+        </property>
+        <property name="resizeMode">
+            <enum>Fixed</enum>
+        </property>
+        <widget class="QLayoutWidget" row="0" column="0" rowspan="1" colspan="4">
+            <property name="name">
+                <cstring>layout1</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>pixmapLabel2</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>4</hsizetype>
+                            <vsizetype>4</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="pixmap">
+                        <pixmap>image0</pixmap>
+                    </property>
+                    <property name="scaledContents">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QLabel">
+                    <property name="name">
+                        <cstring>label</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>5</hsizetype>
+                            <vsizetype>3</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="text">
+                        <string>Do you really want to delete this object?</string>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+        <spacer row="1" column="0">
+            <property name="name">
+                <cstring>leftSpacer</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+            <property name="sizeType">
+                <enum>MinimumExpanding</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>10</width>
+                    <height>20</height>
+                </size>
+            </property>
+        </spacer>
+        <spacer row="1" column="3">
+            <property name="name">
+                <cstring>rightSpacer</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+            <property name="sizeType">
+                <enum>MinimumExpanding</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>10</width>
+                    <height>20</height>
+                </size>
+            </property>
+        </spacer>
+        <widget class="QPushButton" row="1" column="1">
+            <property name="name">
+                <cstring>yesButton</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>4</hsizetype>
+                    <vsizetype>0</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="text">
+                <string>&amp;Yes</string>
+            </property>
+            <property name="accel">
+                <string>Alt+Y</string>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="1" column="2">
+            <property name="name">
+                <cstring>noButton</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>4</hsizetype>
+                    <vsizetype>0</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="text">
+                <string>&amp;No</string>
+            </property>
+            <property name="accel">
+                <string>Alt+N</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox" row="2" column="0" rowspan="1" colspan="4">
+            <property name="name">
+                <cstring>askAgain</cstring>
+            </property>
+            <property name="text">
+                <string>Don't ask me again</string>
+            </property>
+        </widget>
+    </grid>
+</widget>
+<images>
+    <image name="image0">
+        <data format="XPM.GZ" length="1753">789ccdd4c14ac4301006e07b9f62686e45b2ca22b8888fa07814c4c34cb4e86115743d88f8ee36314d3293e99a3d08fea74ef311d29499d50037d79730acbab71dee9e1cb8477c85e1fe7dbbfdb8bdbbf8ecfaf506d667700a27fd51d75b7070f5f2fce09f697a36c721be7473398ebe34bedc84f8127d3986847ddaf21fa989f98d4e0463a4e634bb592f510103d6a9221149a349ba90ca669a65d4d2265aec89bad5a8478c1a46f327d534dab42b16564841f945713951b38f6233c53fa0229c725b1d7591d617c06869e5ad1afe0bac25fd00646a5a5a45f22e506c96a2b748602aa4ec584359d30f4cdda53477d424c7413d32fc32255a2ca88368a6fcedc2cca2763ad9666aa99dda6a16ee99af07509943e8d779f70d10dda63e</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>yesButton</sender>
+        <signal>clicked()</signal>
+        <receiver>deleteDialog</receiver>
+        <slot>accept()</slot>
+    </connection>
+    <connection>
+        <sender>noButton</sender>
+        <signal>clicked()</signal>
+        <receiver>deleteDialog</receiver>
+        <slot>reject()</slot>
+    </connection>
+</connections>
+<tabstops>
+    <tabstop>noButton</tabstop>
+    <tabstop>yesButton</tabstop>
+    <tabstop>askAgain</tabstop>
+</tabstops>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>
